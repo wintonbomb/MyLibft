@@ -6,7 +6,7 @@
 #    By: wharring <wharring@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/26 18:00:04 by wharring          #+#    #+#              #
-#    Updated: 2019/02/28 20:29:11 by wharring         ###   ########.fr        #
+#    Updated: 2019/02/28 21:21:50 by wharring         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,7 +92,7 @@ all:	$(NAME)
 
 $(NAME):
 		$(CC) $(C_FLAGS) -c $(C_FILES) -I$(HEADERS)
-		ac rc $(NAME) $(OBJECTS)
+		ar rc $(NAME) $(OBJECTS)
 		ranlib $(NAME)
 
 fclean: clean
