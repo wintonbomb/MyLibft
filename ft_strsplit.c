@@ -6,7 +6,7 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 17:11:21 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 17:21:50 by wharring         ###   ########.fr       */
+/*   Updated: 2019/02/28 21:09:48 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,27 @@ static int		w_len(const char *str, int i, char c)
 		i++;
 	}
 	return (i);
+}
+
+static int		w_count(const char *str, char c)
+{
+	int		count;
+	int		prev;
+
+	count = 0;
+	prev = 0;
+	while (*str)
+	{
+		if (*str == c && prev == 1)
+			prev = 0;
+		if (*str != c && prev == 0)
+		{
+			prev = 1;
+			count++;
+		}
+		str++;
+	}
+	return (count);
 }
 
 static void		var_init(int *new_x, int *i, int *y)

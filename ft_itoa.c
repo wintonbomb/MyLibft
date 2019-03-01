@@ -6,13 +6,37 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 14:30:39 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 14:38:24 by wharring         ###   ########.fr       */
+/*   Updated: 2019/02/28 20:55:47 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int n)
+size_t		ft_digit_count(long int n, size_t base)
+{
+	size_t	num_digits;
+
+	num_digits = 0;
+	if (n < 0)
+		num_digits++;
+	while (n)
+	{
+		num_digits++;
+		n /= (long int)base;
+	}
+	if (!num_digits)
+		return (1);
+	return (num_digits);
+}
+
+long int	ft_abs(long int n)
+{
+	if (n < 0)
+		return (-n);
+	return (n);
+}
+
+char		*ft_itoa(int n)
 {
 	size_t	digits;
 	char	*num_string;
@@ -20,7 +44,7 @@ char	*ft_itoa(int n)
 	char	*dig_str;
 
 	dig_str = "-0123456789";
-	digits = ft_dg_counter(n, 10);
+	digits = ft_digit_count(n, 10);
 	num_string = ft_strnew(digits);
 	if (num_string)
 	{

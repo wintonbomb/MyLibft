@@ -6,7 +6,7 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:08:51 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 16:11:14 by wharring         ###   ########.fr       */
+/*   Updated: 2019/02/28 21:01:27 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	else
 	{
 		*(copy + n) = 0;
-		ft_mecpy(copy, s2, n);
+		ft_memcpy(copy, s2, n);
 	}
 	return (s1);
 }

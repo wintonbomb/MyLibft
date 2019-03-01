@@ -6,11 +6,11 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 16:22:34 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 16:39:56 by wharring         ###   ########.fr       */
+/*   Updated: 2019/02/28 20:59:46 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr(char const *s)
 {

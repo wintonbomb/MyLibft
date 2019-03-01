@@ -6,7 +6,7 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/20 20:21:32 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 19:41:05 by wharring         ###   ########.fr       */
+/*   Updated: 2019/02/28 20:58:07 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int						ft_memcmp(const void *s1, const void *s2, size_t n);
 int						ft_strequ(char const *s1, char const *s2);
 int						ft_strnequ(char const *s1, char const *s2, size_t n);
 
-void					ft_memset(void *str, int c, size_t n);
+void					*ft_memset(void *str, int c, size_t n);
 void					ft_bzero(void *s, size_t n);
 void					ft_putchar(char c);
 void					*ft_memcpy(void *dst, const void *src, size_t n);
