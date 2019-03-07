@@ -6,7 +6,7 @@
 #    By: wharring <wharring@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/26 18:00:04 by wharring          #+#    #+#              #
-#    Updated: 2019/03/04 18:24:38 by wharring         ###   ########.fr        #
+#    Updated: 2019/03/07 09:09:42 by wharring         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,7 @@ C_FILES =		ft_strcpy.c \
 					w_len.c \
 					ft_digit_count.c \
 					ft_abs.c \
-					ft_end.c \
+					ft_end.c
 
 
 SOURCES = $(addprefix $(SRC_DIR), $(C_FILES))
