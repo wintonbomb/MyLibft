@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   w_len.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/27 19:45:53 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 12:52:14 by wharring         ###   ########.fr       */
+/*   Created: 2019/03/01 11:51:19 by wharring          #+#    #+#             */
+/*   Updated: 2019/03/01 12:18:22 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char	*ft_strrchr(const char *s, int c)
+int		w_len(const char *str, int i, char c)
 {
-	char	*s_cpy;
-	int		i;
-
-	i = 0;
-	c = (char)c;
-	s_cpy = (char *)s;
-	while (s_cpy[i])
-		i++;
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	while (i > 0)
+	while (str[i])
 	{
-		if (s_cpy[i] == c)
-			return (s_cpy + i);
-		i--;
+		if (str[i] == c)
+			break ;
+		i++;
 	}
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	return (NULL);
+	return (i);
 }

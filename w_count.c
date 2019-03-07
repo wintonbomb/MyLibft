@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   w_count.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/27 19:45:53 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 12:52:14 by wharring         ###   ########.fr       */
+/*   Created: 2019/03/01 11:56:09 by wharring          #+#    #+#             */
+/*   Updated: 2019/03/01 12:18:18 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char	*ft_strrchr(const char *s, int c)
+int		w_count(const char *str, char c)
 {
-	char	*s_cpy;
-	int		i;
+	int		count;
+	int		prev;
 
-	i = 0;
-	c = (char)c;
-	s_cpy = (char *)s;
-	while (s_cpy[i])
-		i++;
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	while (i > 0)
+	count = 0;
+	prev = 0;
+	while (*str)
 	{
-		if (s_cpy[i] == c)
-			return (s_cpy + i);
-		i--;
+		if (*str == c && prev == 1)
+			prev = 0;
+		if (*str != c && prev == 0)
+		{
+			prev = 1;
+			count++;
+		}
+		str++;
 	}
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	return (NULL);
+	return (count);
 }

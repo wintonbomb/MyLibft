@@ -6,55 +6,17 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 17:11:21 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 21:09:48 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/01 12:17:55 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int		w_len(const char *str, int i, char c)
-{
-	while (str[i])
-	{
-		if (str[i] == c)
-			break ;
-		i++;
-	}
-	return (i);
-}
-
-static int		w_count(const char *str, char c)
-{
-	int		count;
-	int		prev;
-
-	count = 0;
-	prev = 0;
-	while (*str)
-	{
-		if (*str == c && prev == 1)
-			prev = 0;
-		if (*str != c && prev == 0)
-		{
-			prev = 1;
-			count++;
-		}
-		str++;
-	}
-	return (count);
-}
 
 static void		var_init(int *new_x, int *i, int *y)
 {
 	*new_x = 0;
 	*y = 0;
 	*i = 0;
-}
-
-static char		**end(char **a, int y)
-{
-	a[y] = 0;
-	return (a);
 }
 
 char			**ft_strsplit(char const *s, char c)
@@ -83,5 +45,5 @@ char			**ft_strsplit(char const *s, char c)
 			new_x = 0;
 		}
 	}
-	return (end(a, y));
+	return (ft_end(a, y));
 }

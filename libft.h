@@ -6,7 +6,7 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/20 20:21:32 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 20:58:07 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/04 17:49:34 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,9 @@ t_list					*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 size_t					ft_strlen(const char *s);
 size_t					ft_strlcat(char *dst, const char *src, size_t size);
+size_t					ft_digit_count(long int n, size_t base);
 
+char					*ft_strcat(char *s1, const char *s2);
 char					**ft_strsplit(char const *s, char c);
 char					*ft_strjoin(char const *s1, char const *s2);
 char					*ft_strsub(char const *s, unsigned int start,\
@@ -47,6 +49,10 @@ char					*ft_strstr(const char *haystack, const char *needle);
 char					*ft_strncpy(char *dst, const char *src, size_t len);
 char					*ft_strcpy(char *dest, const char *src);
 char					*ft_strdup(const char *s);
+char					**ft_end(char **a, int y);
+char					*ft_strnstr(const char *s1, const char *s2,\
+						size_t len);
+char					*ft_strrchr(const char *s, int c);
 
 int						ft_atoi(const char *str);
 int						ft_isalpha(int c);
@@ -61,6 +67,10 @@ int						ft_strcmp(const char *s1, const char *s2);
 int						ft_memcmp(const void *s1, const void *s2, size_t n);
 int						ft_strequ(char const *s1, char const *s2);
 int						ft_strnequ(char const *s1, char const *s2, size_t n);
+int						w_len(const char *str, int i, char c);
+int						w_count(const char *str, char c);
+
+long int				ft_abs(long int n);
 
 void					*ft_memset(void *str, int c, size_t n);
 void					ft_bzero(void *s, size_t n);

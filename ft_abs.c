@@ -1,37 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/27 19:45:53 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 12:52:14 by wharring         ###   ########.fr       */
+/*   Created: 2019/03/01 11:14:14 by wharring          #+#    #+#             */
+/*   Updated: 2019/03/01 11:47:42 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char	*ft_strrchr(const char *s, int c)
+long int	ft_abs(long int n)
 {
-	char	*s_cpy;
-	int		i;
-
-	i = 0;
-	c = (char)c;
-	s_cpy = (char *)s;
-	while (s_cpy[i])
-		i++;
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	while (i > 0)
-	{
-		if (s_cpy[i] == c)
-			return (s_cpy + i);
-		i--;
-	}
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	return (NULL);
+	if (n < 0)
+		return (-n);
+	return (n);
 }

@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_digit_count.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/27 19:45:53 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 12:52:14 by wharring         ###   ########.fr       */
+/*   Created: 2019/03/01 11:11:32 by wharring          #+#    #+#             */
+/*   Updated: 2019/03/01 12:25:12 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char	*ft_strrchr(const char *s, int c)
+size_t	ft_digit_count(long int n, size_t base)
 {
-	char	*s_cpy;
-	int		i;
+	size_t	num_digits;
 
-	i = 0;
-	c = (char)c;
-	s_cpy = (char *)s;
-	while (s_cpy[i])
-		i++;
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	while (i > 0)
+	num_digits = 0;
+	if (n < 0)
+		num_digits++;
+	while (n)
 	{
-		if (s_cpy[i] == c)
-			return (s_cpy + i);
-		i--;
+		num_digits++;
+		n /= (long int)base;
 	}
-	if (s_cpy[i] == c)
-		return (s_cpy + i);
-	return (NULL);
+	if (!num_digits)
+		return (1);
+	return (num_digits);
 }

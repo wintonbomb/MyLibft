@@ -6,7 +6,7 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:53:24 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 16:57:07 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/04 18:01:15 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,15 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);
-		n = -n;
+		n *= -1;
 	}
-	if (n >= 10)
+	if (n > 9)
 	{
 		ft_putnbr_fd(n / 10, fd);
-		ft_putnbr_fd(n % 10 + '0', fd);
+		ft_putnbr_fd(n % 10, fd);
 	}
 	else
 	{
-		ft_putchar_fd(n % 10 + '0', fd);
+		ft_putchar_fd(n + '0', fd);
 	}
 }
