@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:53:24 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/04 18:01:15 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:40:09 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Outputs the integer n to the file descriptor fd.
+*/
 
 #include "libft.h"
 

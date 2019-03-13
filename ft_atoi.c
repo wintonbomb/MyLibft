@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 17:07:47 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/21 17:17:59 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:54:26 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Converts a string into an integer numerical representation. Result *= 10
+** adds a digit with each loop.
+*/
 
 #include "libft.h"
 

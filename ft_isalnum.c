@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 17:02:51 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 17:04:56 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 18:18:12 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Tests for any character to see if it is a # or letter
+*/
 
 #include "libft.h"
 

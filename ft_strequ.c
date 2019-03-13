@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:33:03 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 16:39:16 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:23:54 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Lexicographical comparison between s1 and s2. If the 2 strings are identical
+** the function returns 1, or 0 otherwise.
+*/
 
 #include "libft.h"
 

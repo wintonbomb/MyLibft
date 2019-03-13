@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 19:23:01 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 19:25:36 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 18:45:32 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Compares byte string s1 against byte string s2. Both strings are assumed
+** to be n bytes long
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 17:05:11 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 17:06:29 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:19:46 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Applies the function f to each character of the string passed as argument,
+** and passing its index as first argument. Each character is passed by address
+** to f to be modified if necessary.
+*/
 
 #include "libft.h"
 

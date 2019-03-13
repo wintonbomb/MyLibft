@@ -6,9 +6,17 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 17:11:21 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 12:17:55 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:33:52 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates (with malloc(3)) and returns an array of "fresh" strings (all
+** ending with '\0', including the array itself) obtained by spliting s using
+** the character c as a delimiter. If the allocation fails the function returns
+** NULL. Example: ft_strsplit("*hello*fellow***students*", '*') returns the
+** array ["hello", "fellow", "students"].
+*/
 
 #include "libft.h"
 

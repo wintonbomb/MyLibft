@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 14:42:29 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 14:45:22 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 19:37:20 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copy and concatenate strings with the same input parameters and output
+** result
+*/
 
 #include "libft.h"
 

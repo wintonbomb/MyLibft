@@ -6,9 +6,15 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 14:30:39 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 11:48:19 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:35:27 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocated (with malloc(3)) and returns a "fresh" string ending with '\0'
+** representing the integer n given as argument. Negative numbers must be
+** supported. If the allocation fails, the function returns NULL.
+*/
 
 #include "libft.h"
 

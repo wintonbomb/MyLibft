@@ -6,9 +6,15 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:39:47 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 16:43:45 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:26:45 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Lexicographical comparison between s1 and s2 up to n characters or unitl a
+** '\0' is reached. If the 2 strings are identical, the function returns 1,
+** or 0 otherwise.
+*/
 
 #include "libft.h"
 

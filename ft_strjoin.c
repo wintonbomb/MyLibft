@@ -6,9 +6,15 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:44:06 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 16:47:32 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:29:39 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates (with malloc(3)) and returns a "fresh" string ending with '\0'
+** result of the concatenation of s1 and s2. If the allocation fails the
+** function returns NULL.
+*/
 
 #include "libft.h"
 

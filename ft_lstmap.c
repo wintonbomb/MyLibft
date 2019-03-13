@@ -6,9 +6,15 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 19:02:54 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 19:06:59 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:49:48 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Iterates a list lst and applies the function f to each link to create a
+** "fresh" list (using (malloc(3)) resulting from the successive applications
+** of f. If the allocation fails, the function returns NULL.
+*/
 
 #include "libft.h"
 

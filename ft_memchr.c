@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 19:19:27 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 19:21:46 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 18:51:03 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** locates the first occurrence of unsigned char c in string s.
+*/
 
 #include "libft.h"
 

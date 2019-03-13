@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 20:05:50 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 20:37:58 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 19:44:14 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Locates the first occurrence of the null-term string needle in the null-term
+** string haystack, where not mroe than len chars are searched.
+*/
 
 #include "libft.h"
 

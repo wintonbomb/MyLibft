@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 17:15:06 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 17:15:56 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 19:48:39 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Converts a lowercase letter to uppercase
+*/
 
 #include "libft.h"
 

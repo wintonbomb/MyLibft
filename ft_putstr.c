@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 16:22:34 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 20:59:46 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:36:30 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Outputs the string s to the standard output.
+*/
 
 #include "libft.h"
 

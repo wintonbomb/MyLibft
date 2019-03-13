@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:08:51 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 21:01:27 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 19:40:09 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Append a copy of the null-term string s2 to the end of the null-term strin s1
+** then add a terminating '\0'. It appends not more than n chars from s2
+*/
 
 #include "libft.h"
 

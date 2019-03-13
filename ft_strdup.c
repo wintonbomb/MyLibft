@@ -6,9 +6,14 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 16:55:55 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/21 17:05:18 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 19:34:54 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates sufficient memory for a copy of s1, does the copy, and returns a
+** pointer to it. Pointer may be used as an argument to function free.
+*/
 
 #include "libft.h"
 

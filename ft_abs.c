@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/03/01 11:14:14 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/01 11:47:42 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:54:15 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Returns the absolute value of n
+*/
 
 #include "libft.h"
 

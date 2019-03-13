@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 16:08:22 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 16:11:55 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 18:15:41 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Write zeroes to a byte string
+*/
 
 #include "libft.h"
 

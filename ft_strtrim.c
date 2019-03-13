@@ -6,9 +6,17 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:21:25 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 19:18:17 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:31:13 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates (with malloc(3)) and returns a copy of the string given as
+** argument without whitespaces at the beginning or at the end of the string.
+** Will be considered as whitespaces the following characters ' ', '\n' and
+** '\t'. If s has no whitespaces at the beginning or at the end, the function
+** returns a copy of s. If the allocation fails the function returns NULL.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,15 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/28 16:00:58 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/28 16:07:31 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:22:54 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Applies the function f to each charaacter of the string passed as argument
+** by giving its index as first argument to create a "fresh" new string
+** (with malloc(3)) resulting from the successive applications of f.
+*/
 
 #include "libft.h"
 

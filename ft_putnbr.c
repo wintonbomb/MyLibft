@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 17:52:21 by wharring          #+#    #+#             */
-/*   Updated: 2019/03/04 18:30:48 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 17:37:21 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Outputs the integer n to the standard output.
+*/
 
 #include "libft.h"
 

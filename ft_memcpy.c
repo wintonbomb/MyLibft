@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/27 16:31:20 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 16:36:11 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 18:24:40 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copies n bytes from memory of src to dst. If overlap, behavior is undefined
+*/
 
 #include "libft.h"
 

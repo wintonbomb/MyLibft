@@ -6,9 +6,13 @@
 /*   By: wharring <wharring@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/21 15:14:38 by wharring          #+#    #+#             */
-/*   Updated: 2019/02/27 20:28:05 by wharring         ###   ########.fr       */
+/*   Updated: 2019/03/12 19:33:51 by wharring         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Copies the string src to dest
+*/
 
 #include "libft.h"
 
